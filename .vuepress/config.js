@@ -35,25 +35,45 @@ module.exports = {
     nav: [
       {
         text: 'Install',
-        link: '/install/',
+        link: '/install/install.md',
       },
       {
         text: 'Config',
         link: '/config/'
       },
       {
-        text: 'Artemis',
-        link: 'https://docs.artemis.ac'
+        text: 'Buy Artemis',
+        link: 'https://artemis.ac'
       }
     ],
     sidebar: {
       '/install/': [
         {
-          title: 'Install',
+          title: ' ',
           collapsable: false,
           children: [
-            '',
-            'changing-hwid',
+            '/install/install.md',
+          ]
+        },
+        {
+          title: 'Obtaining the loader',
+          collapsable: false,
+          children: [
+            '/install/loader/getting-the-loader.md',
+          ]
+        },
+        {
+          title: 'Installation',
+          collapsable: false,
+          children: [
+            '/install/panel/installation-pterodactyl.md'
+          ]
+        },
+        {
+          title: 'Changing your HWID',
+          collapsable: false,
+          children: [
+            '/install/hwid/changing-hwid.md',
           ]
         }
       ],
